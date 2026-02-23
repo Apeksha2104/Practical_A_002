@@ -1,10 +1,19 @@
-class Full_pyramid {
+public class FullPyramid4thB {
+
     public static void main(String[] args) {
-        for (int i = 1; i <= 5; i++) {
+
+        int n = 5;
+
+        // -------- Pattern 1: Centered Star Pyramid --------
+        for (int i = 1; i <= n; i++) {
+
+            for (int s = 1; s <= n - i; s++) {
+                System.out.print(" ");
+            }
+
             for (int j = 1; j <= i; j++) {
                 System.out.print("* ");
             }
+
             System.out.println();
         }
-    }
-}
